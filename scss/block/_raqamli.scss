@@ -1,0 +1,122 @@
+.raqamli-container {
+  padding: 70px 0px 70px 40px;
+  background-color: #37474f;
+  border-radius: 10px;
+  background-image: url("../../img/raqamli-img.png"),
+    url("../../img/circles.png");
+  background-repeat: no-repeat;
+  background-position: right center, right;
+  background-position-y: center, -140px;
+  background-position-x: right, 320px;
+}
+.raqamli__title {
+  @include raqamli-ttle;
+  margin-bottom: 15px;
+}
+.raqamli__texts {
+  max-width: 565px;
+}
+.raqamli__text {
+  @include raqamli-title2;
+  margin-bottom: 42px;
+}
+.raqamli__btn-link1 {
+  @include raqamli-btn1;
+}
+.raqamli__btn-link2 {
+  @include raqamli-btn2;
+  margin-left: 20px;
+}
+.raqamli__btns {
+  @include flex;
+}
+@media only screen and (max-width: 1258px) {
+  .raqamli-container {
+    padding: 52px 0px 52px 30px;
+    background-image: url("../../img/raqamli-tablet-bg.png"),
+      url("../../img/circles-tablet.png");
+    background-repeat: no-repeat;
+    background-position-y: center, -120px;
+    background-position-x: right, 585px;
+  }
+  .raqamli__texts {
+    max-width: 377px;
+  }
+  .raqamli__title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  .raqamli__text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 64px;
+  }
+  .raqamli__btn-link1 {
+    padding: 13px 56px 13px 21px;
+  }
+}
+@media only screen and (max-width: 824px) {
+  .raqamli-container {
+    padding: 40px 0px 310px 20px;
+    background-image: url("../../img/raqamli-mobile-bg.png"),
+      url("../../img/circles-mobile.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom, center;
+    background-position-x: center;
+    background-size: auto, cover;
+  }
+  .raqamli__title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .raqamli__text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  .raqamli__texts {
+    max-width: 377px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .raqamli__btns {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 577px) {
+  .raqamli-container {
+    padding: 40px 0px 310px 20px;
+    background-image: url("../../img/raqamli-mobile-bg.png"),
+      url("../../img/circles-mobile.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom, 300px;
+    background-position-x: center;
+  }
+  .raqamli__btns {
+    display: block;
+    margin-right: auto;
+  }
+  .raqamli__btn {
+    margin-top: 42px;
+    display: block;
+  }
+  .raqamli__btn-link2 {
+    margin-left: 0px;
+  }
+  .raqamli__title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .raqamli__text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  .raqamli__texts {
+    max-width: 332px;
+    margin-left: 0px;
+    text-align: left;
+  }
+}

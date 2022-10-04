@@ -1,0 +1,67 @@
+.xizmatlar__container {
+  margin-top: 116px;
+}
+.xizmatlar__title1 {
+  @include xizmatlar-title1;
+}
+.line {
+  padding-left: 35px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  margin-left: 15px;
+}
+.xizmatlar-titles {
+  @include flex;
+  margin-bottom: 5px;
+}
+.xizmatlar__title2 {
+  @include xizmatlar-title2;
+  margin: 0px;
+}
+.xizmatlar-list {
+  margin-top: 40px;
+  @include flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.xizmatler__item {
+  padding: 30px 29px 26px 29px;
+  background-color: rgba(35, 4, 157, 0.03);
+  border-radius: 10px;
+  max-width: 427px;
+  text-align: center;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: rgba(35, 4, 157, 0.03);
+    border: 1px solid #feab38;
+    border-radius: 10px;
+  }
+}
+.xizmatlar__img {
+  max-width: 83px;
+  margin-bottom: 15px;
+}
+.xizmatlar-item__title {
+  @include xizmatlar-item-title;
+  margin-bottom: 8px;
+}
+.xizmatlar-item__text {
+  @include xizmatlar-item-texts;
+  max-width: 369px;
+}
+@media only screen and (max-width: 1400px) {
+  .xizmatlar-list {
+    justify-content: left;
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 1275px) {
+  .xizmatlar-list {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .xizmatlar-list {
+    justify-content: center;
+  }
+}

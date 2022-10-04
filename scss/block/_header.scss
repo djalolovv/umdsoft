@@ -1,0 +1,82 @@
+.site-header {
+  border-bottom: 1px solid rgba(25, 28, 47, 0.4);
+  margin-bottom: 40px;
+}
+.site-logo__img {
+  max-width: 164px;
+  height: 35px;
+}
+.site-header__container {
+  padding-top: 28px;
+  padding-bottom: 27px;
+  @include flex;
+  justify-content: space-between;
+}
+.header__item-link {
+  @include link-style;
+}
+.header__item-link--color {
+  color: #191c2f;
+}
+.site-header__list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 662px;
+}
+.header__item:not(:last-child) {
+  margin-right: 40px;
+}
+.header__btn {
+  background-image: url("../../img/ru-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 10px 11px 10px 54px;
+  border: 0.8px solid rgba(25, 28, 47, 0.4);
+  border-radius: 8px;
+  margin-left: 30px;
+  background-position-x: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #191c2f;
+  background-color: transparent;
+}
+.header__list2 {
+  @include flex;
+}
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../img/burger.svg");
+  background-repeat: no-repeat;
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .site-header__list {
+    display: none;
+  }
+  .burger-btn {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .site-header__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .header__item-link {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .header__btn,
+  .header__item2 {
+    display: none;
+  }
+  .burger-btn {
+    margin: 0;
+  }
+}
